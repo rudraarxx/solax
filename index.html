@@ -3,8 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Solax</title>
   </head>
-  <body>Solax</h1>
+  <body>
+    <!-- header -->
+    <header class="bg-primary-black absolute w-full top-0 left-0 z-50">
+      <div class="default_container max-w-7xl mx-auto">
+        <div class="h-20 flex items-center justify-between">
+          <a href="/">
+            <img src="./assets/Solax_Logo.svg" alt="brand_logo" />
+          </a>
+
+          <div class="nav-menu w-2/3 flex items-center justify-between">
+            <ul class="flex gap-10">
+              <li>
+                <a class="font-primary text-primary-white font-medium" href=""
+                  >Homeowners</a
+                >
+              </li>
+              <li>
+                <a class="font-primary text-primary-white font-medium" href=""
+                  >Installers</a
+                >
+              </li>
+              <li>
+                <a class="font-primary text-primary-white font-medium" href=""
+                  >Support</a
+                >
+              </li>
+            </ul>
+
+            <div class="primary-btn">
+              <button
+                class="bg-primary-yellow px-6 py-3 rounded-full font-primary text-primary-black font-medium"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main content -->
+
+    <main>
+      <section class="relative overflow-x-hidden">
+        <video autoplay muted loop id="bg-video" poster="" class="">
+          <source src="./assets/videos/hero-section.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="content absolute bg-[#15151580] w-full h-full top-0 left-0">
+          <div class="default_container max-w-7xl mx-auto">
+            <div
+              class="hero-content h-screen flex flex-col justify-center items-center gap-6"
+            >
+              <div class="hero-content-top flex flex-col items-center gap-4">
+                <h1
+                  class="font-primary text-primary-white text-[80px] leading-[88px] max-w-[55%] text-center"
+                >
+                  Energy Freedom for <span class="italic">Home Owners</span>
+                </h1>
+                <p
+                  class="font-secondary font-medium text-xl text-primary-white"
+                >
+                  Store, Use, Save, and Sell your Power.
+                </p>
+              </div>
+
+              <div
+                class="hero-content-btm flex items-center justify-center gap-4"
+              >
+                <button
+                  class="bg-primary-yellow border border-primary-yellow px-6 py-3 rounded-full font-primary text-primary-black font-medium flex items-center gap-2"
+                >
+                  <span>Get A Free Consultation</span>
+                  <img src="./assets/ArrowLeft.svg" alt="arrowLeft" />
+                </button>
+
+                <button
+                  class="px-6 py-3 rounded-full font-primary text-primary-white font-medium border border-primary-white"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
   </body>
 </html>
