@@ -18,6 +18,7 @@ tailwind.config = {
           black: "#151515",
           white: "#F5F5F5",
           yellow: "#EEBB0C",
+          orange: "#EF6818",
         },
       },
     },
