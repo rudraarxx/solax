@@ -17,6 +17,7 @@ tailwind.config = {
         primary: {
           black: "#151515",
           white: "#F5F5F5",
+          grey: "#C8C8C8",
           yellow: "#EEBB0C",
           orange: "#EF6818",
         },
@@ -24,3 +25,15 @@ tailwind.config = {
     },
   },
 };
+
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".buttonNext",
+    prevEl: ".buttonPrev",
+  },
+});
