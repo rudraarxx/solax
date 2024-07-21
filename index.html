@@ -15,31 +15,36 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="style.css" />
     <title>Solax</title>
   </head>
   <body class="bg-primary-black">
     <!-- header -->
-    <header class="bg-primary-black absolute w-full top-0 left-0 z-50">
-      <div class="default_container max-w-7xl mx-auto">
+    <header class="bg-primary-black absolute z-[999] w-full top-0 left-0 z-50">
+      <div
+        class="default_container max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mx-auto"
+      >
         <div class="h-20 flex items-center justify-between">
           <a href="/">
             <img src="./assets/Solax_Logo.svg" alt="brand_logo" />
           </a>
 
-          <div class="nav-menu w-2/3 flex items-center justify-between">
-            <ul class="flex gap-10">
-              <li>
+          <div
+            id="navMenu"
+            class="nav-menu p-10 lg:p-0 lg:w-2/3 flex flex-col lg:flex-row items-center justify-between gap-6 absolute z-50 w-[320px] sm:w-[448px] md:w-[672px] lg:w-[65%] rounded-2xl lg:rounded-none top-24 bg-primary-black lg:static"
+          >
+            <ul class="flex flex-col lg:flex-row gap-6 lg:gap-10">
+              <li class="flex justify-center">
                 <a class="font-primary text-primary-white font-medium" href=""
                   >Homeowners</a
                 >
               </li>
-              <li>
+              <li class="flex justify-center">
                 <a class="font-primary text-primary-white font-medium" href=""
                   >Installers</a
                 >
               </li>
-              <li>
+              <li class="flex justify-center">
                 <a class="font-primary text-primary-white font-medium" href=""
                   >Support</a
                 >
@@ -54,6 +59,14 @@
               </button>
             </div>
           </div>
+          <div class="relative lg:hidden">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox" class="toggle">
+              <div class="bars" id="bar1"></div>
+              <div class="bars" id="bar2"></div>
+              <div class="bars" id="bar3"></div>
+            </label>
+          </div>
         </div>
       </div>
     </header>
@@ -61,31 +74,40 @@
     <!-- main content -->
 
     <main>
-      <section class="relative overflow-x-hidden">
-        <video autoplay muted loop id="bg-video" poster="" class="object-cover">
+      <section class="relative h-screen xl:h-auto overflow-x-hidden">
+        <video
+          autoplay
+          muted
+          loop
+          id="bg-video"
+          poster=""
+          class="h-full xl:h-auto object-cover"
+        >
           <source src="./assets/videos/hero-section.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div class="content absolute bg-[#15151580] w-full h-full top-0 left-0">
-          <div class="default_container max-w-7xl mx-auto">
+          <div
+            class="default_container max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mx-auto"
+          >
             <div
               class="hero-content h-screen flex flex-col justify-center items-center gap-6"
             >
               <div class="hero-content-top flex flex-col items-center gap-4">
                 <h1
-                  class="font-primary text-primary-white text-[80px] leading-[88px] max-w-[55%] text-center"
+                  class="font-primary text-primary-white text-[42px] leading-[48px] sm:text-[52px] sm:leading-[58px] lg:text-[72px] lg:leading-[80px] xl:text-[80px] xl:leading-[88px] lg:max-w-[65%] text-center"
                 >
                   Energy Freedom for <span class="italic">Home Owners</span>
                 </h1>
                 <p
-                  class="font-secondary font-medium text-xl text-primary-white"
+                  class="font-secondary font-medium text-lg lg:text-xl text-primary-white"
                 >
                   Store, Use, Save, and Sell your Power.
                 </p>
               </div>
 
               <div
-                class="hero-content-btm flex items-center justify-center gap-4"
+                class="hero-content-btm flex flex-col lg:flex-row items-center justify-center gap-4"
               >
                 <button
                   class="bg-primary-yellow border border-primary-yellow px-6 py-3 rounded-full font-primary text-primary-black font-medium flex items-center gap-2"
@@ -107,7 +129,9 @@
 
       <!-- second section -->
       <section class="bg-primary-white">
-        <div class="default_container max-w-7xl mx-auto">
+        <div
+          class="default_container max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mx-auto"
+        >
           <div class="py-24 flex flex-col gap-16">
             <div class="flex flex-col items-center gap-2">
               <span
@@ -115,13 +139,13 @@
                 >Powering a Green Future</span
               >
               <h2
-                class="font-primary text-6xl leading-[70px] text-primary-black font-medium text-center max-w-[55%]"
+                class="font-primary text-4xl lg:text-6xl lg:leading-[70px] text-primary-black font-medium text-center lg:max-w-[55%]"
               >
                 Powering a Sustainable Future with Solar Energy
               </h2>
             </div>
 
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid lg:grid-cols-2 gap-4">
               <div class="relative">
                 <video
                   autoplay
@@ -129,7 +153,7 @@
                   loop
                   id="bg-video"
                   poster=""
-                  class="h-[500px] object-cover"
+                  class="h-[420px] lg:h-[500px] object-cover"
                 >
                   <source src="./assets/videos/video_2.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
@@ -140,12 +164,12 @@
                 >
                   <div class="flex flex-col items-center gap-2">
                     <h3
-                      class="font-primary text-[48px] leading-[54px] font-medium text-[#FAFAFAE5] text-center"
+                      class="font-primary text-[36px] leading-[42px] lg:text-[48px] lg:leading-[54px] font-medium text-[#FAFAFAE5] text-center"
                     >
                       Homeowners
                     </h3>
                     <p
-                      class="font-secondary font-medium text-primary-white text-center max-w-[45%]"
+                      class="font-secondary font-medium text-primary-white text-center max-w-[80%] lg:max-w-[45%]"
                     >
                       Discover Energy Freedom with SolaX Home Power Solutions
                     </p>
@@ -168,7 +192,7 @@
                   loop
                   id="bg-video"
                   poster=""
-                  class="h-[500px] object-cover"
+                  class="h-[420px] lg:h-[500px] object-cover"
                 >
                   <source src="./assets/videos/video_3.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
@@ -179,12 +203,12 @@
                 >
                   <div class="flex flex-col items-center gap-2">
                     <h3
-                      class="font-primary text-[48px] leading-[54px] font-medium text-[#FAFAFAE5] text-center"
+                      class="font-primary text-[36px] leading-[42px] lg:text-[48px] lg:leading-[54px] font-medium text-[#FAFAFAE5] text-center"
                     >
                       Installers
                     </h3>
                     <p
-                      class="font-secondary font-medium text-primary-white text-center max-w-[42%]"
+                      class="font-secondary font-medium text-primary-white text-center max-w-[80%] lg:max-w-[42%]"
                     >
                       Empower Your Business with the SolaX Certified Partner
                       Program
@@ -209,14 +233,14 @@
       <section class="">
         <div class="py-24 flex flex-col">
           <!-- top -->
-          <div class="default_container max-w-7xl mx-auto">
-            <div>
-              <h2
-                class="font-primary text-6xl leading-[70px] text-primary-white font-medium"
-              >
-                Storms Happen—<br />Outages Don’t Have to with SolaX
-              </h2>
-            </div>
+          <div
+            class="default_container max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mx-auto"
+          >
+            <h2
+              class="font-primary text-4xl lg:text-6xl lg:leading-[70px] text-primary-white font-medium"
+            >
+              Storms Happen—<br />Outages Don’t Have to with SolaX
+            </h2>
           </div>
 
           <!-- middle -->
@@ -235,10 +259,12 @@
           </div>
 
           <!-- bottom -->
-          <div class="default_container max-w-7xl mx-auto">
+          <div
+            class="default_container max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mx-auto"
+          >
             <div class="flex justify-end mt-10">
               <p
-                class="font-secondary font-medium text-primary-white max-w-[55%]"
+                class="font-secondary font-medium text-primary-white lg:max-w-[55%]"
               >
                 Keep your home and all appliances powered during an outage. When
                 severe weather is forecast, Storm Watch will automatically
@@ -256,29 +282,33 @@
 
       <!-- fourth section -->
       <section class="py-24 bg-primary-white">
-        <div class="default_container max-w-7xl mx-auto">
-          <div class="flex flex-col gap-16">
+        <div
+          class="default_container max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mx-auto"
+        >
+          <div class="flex flex-col gap-10 lg:gap-16">
             <div class="flex flex-col items-center gap-2">
               <span
                 class="font-primary text-lg text-primary-orange font-medium uppercase text-center"
                 >why solax</span
               >
               <h2
-                class="font-primary text-6xl leading-[70px] text-primary-black font-medium text-center max-w-[45%]"
+                class="font-primary text-4xl lg:text-6xl lg:leading-[70px] text-primary-black font-medium text-center lg:max-w-[45%]"
               >
                 Leading the Way in Solar Innovation
               </h2>
             </div>
 
-            <div class="flex">
-              <div class="py-16 relative z-50">
+            <div class="flex flex-col lg:flex-row">
+              <div class="lg:py-16 relative z-50">
                 <img
                   height=""
                   src="./assets/homepage_3.webp"
                   alt="homepage_3"
                 />
               </div>
-              <div class="bg-primary-black pl-36 pr-20 pt-24 w-[60%] -ml-24">
+              <div
+                class="bg-primary-black py-10 px-6 lg:pl-36 lg:pr-20 lg:pt-24 lg:w-[60%] lg:-ml-24"
+              >
                 <div class="swiper flex flex-col gap-20">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide flex flex-col gap-10">
@@ -583,8 +613,10 @@
 
       <!-- fifth section -->
       <section class="py-24">
-        <div class="default_container max-w-7xl mx-auto">
-          <div class="flex gap-20">
+        <div
+          class="default_container max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mx-auto"
+        >
+          <div class="flex flex-col gap-10 lg:flex-row lg:gap-20">
             <!-- left -->
             <div class="flex flex-col gap-6">
               <div class="flex flex-col gap-4">
@@ -593,13 +625,13 @@
                   >EASY, SAFE, SMART</span
                 >
                 <h2
-                  class="font-primary text-6xl leading-[70px] text-primary-white font-medium"
+                  class="font-primary text-4xl lg:text-6xl lg:leading-[70px] text-primary-white font-medium"
                 >
                   SolaX Smart Energy Management System
                 </h2>
               </div>
               <div>
-                <p class="font-secondary text-primary-white max-w-[90%]">
+                <p class="font-secondary text-primary-white lg:max-w-[90%]">
                   Our Smart Energy Management System Offers real-time monitoring
                   and control of your solar setup. Manage costs efficiently and
                   embrace a sustainable lifestyle with intuitive interfaces and
@@ -629,11 +661,13 @@
 
       <!-- sixth section -->
       <section>
-        <div class="default_container max-w-7xl mx-auto">
+        <div
+          class="default_container max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mx-auto"
+        >
           <div
-            class="bg-gradient-to-r from-[#EEBB0C] to-[#EF6818] py-10 px-[90px] flex justify-between items-center"
+            class="bg-gradient-to-r from-[#EEBB0C] to-[#EF6818] py-10 px-[90px] flex flex-col-reverse gap-10 lg:flex-row justify-between items-center"
           >
-            <div class="flex flex-col gap-10 max-w-[35%]">
+            <div class="flex flex-col gap-10 lg:max-w-[35%]">
               <div class="flex flex-col gap-4">
                 <h3
                   class="font-primary text-4xl font-medium text-primary-black"
@@ -658,7 +692,11 @@
                     type="submit"
                   >
                     <span>Submit</span>
-                    <img src="./assets/ArrowLeft.svg" alt="" />
+                    <img
+                      class="hidden lg:inline-block"
+                      src="./assets/ArrowLeft.svg"
+                      alt=""
+                    />
                   </button>
                 </div>
               </form>
@@ -673,13 +711,19 @@
 
       <!-- footer -->
       <footer class="pt-24">
-        <div class="default_container max-w-7xl mx-auto">
-          <div class="flex justify-between">
-            <a href="/">
-              <img src="./assets/footer_logo.svg" alt="footer_logo" />
-            </a>
+        <div
+          class="default_container max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mx-auto"
+        >
+          <div class="flex flex-col gap-10 lg:flex-row lg:justify-between">
+            <div class="flex justify-center">
+              <a href="/">
+                <img src="./assets/footer_logo.svg" alt="footer_logo" />
+              </a>
+            </div>
 
-            <ul class="w-[70%] flex justify-between">
+            <ul
+              class="grid grid-cols-2 gap-y-10 gap-x-6 lg:w-[70%] lg:flex lg:justify-between"
+            >
               <li class="flex flex-col gap-8">
                 <span
                   class="font-primary text-primary-white text-base font-medium"
@@ -816,7 +860,9 @@
             <div
               class="w-full h-[1px] bg-gradient-to-r from-[#15151566] via-[#7070705F] to-[#15151566]"
             ></div>
-            <div class="py-5 flex justify-between">
+            <div
+              class="py-5 flex flex-col items-center gap-6 lg:flex-row lg:justify-between"
+            >
               <ul class="flex gap-5">
                 <li>
                   <a href="">
