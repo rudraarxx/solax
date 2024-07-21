@@ -46,7 +46,7 @@ function toggleNavMenu() {
 
   function setInitialState() {
     if (window.innerWidth < lgBreakpoint) {
-      navMenu.style.transition = "transform 0.3s ease-in-out";
+      navMenu.style.transition = "transform 0.5s ease-in-out";
       navMenu.style.transform = "translateY(-150%)";
     } else {
       navMenu.style.transition = "none";
