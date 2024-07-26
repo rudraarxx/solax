@@ -22,6 +22,15 @@ tailwind.config = {
           orange: "#EF6818",
         },
       },
+      keyframes: {
+        popUpAnime: {
+          "0%": { transform: "scaleY(0)" },
+          "100%": { transform: "scaleY(1)" },
+        },
+      },
+      animation: {
+        popUpAnime: "popUpAnime .5s ease-in-out 1",
+      },
     },
   },
 };
