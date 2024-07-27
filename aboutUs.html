@@ -15,7 +15,37 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .swiper-pagination-bullet {
+        background: none !important; /* Remove background color */
+        width: auto !important; /* Auto width to fit the text */
+        height: auto !important; /* Auto height to fit the text */
+        font-family: "Jost", "sans-serif";
+        font-size: 18px;
+        font-weight: 500;
+        color: #151515;
+        opacity: 0.5;
+        border-radius: 0 !important; /* Remove rounded corners */
+        display: inline-block; /* Display bullets inline */
+        cursor: pointer; /* Show pointer on hover */
+      }
+
+      .swiper-pagination-bullet-active {
+        opacity: 1;
+      }
+
+      .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+        background-color: #151515; /* Fill color */
+        transition: all 0.3s ease; /* Smooth transition */
+      }
+    </style>
     <title>About Us</title>
   </head>
   <body class="bg-primary-black">
@@ -345,11 +375,700 @@
                   </div>
                 </div>
               </li>
+
+              <li class="absolute top-[18%] left-[520px] group">
+                <div
+                  class="w-5 h-5 bg-primary-yellow rounded-full flex items-center justify-center cursor-pointer"
+                >
+                  <div class="w-3 h-3 bg-primary-black rounded-full"></div>
+                </div>
+
+                <div
+                  class="flex flex-col items-center absolute -top-[80px] -left-[90px] origin-bottom transition-all duration-500 ease-in-out scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100"
+                >
+                  <div
+                    class="px-2 py-2.5 rounded-full bg-gradient-to-r from-[#EEBB0C] to-[#EF6818]"
+                  >
+                    <span
+                      class="whitespace-nowrap font-secondary text-primary-black"
+                      >Hangzhou, China (HQ)</span
+                    >
+                  </div>
+                  <div>
+                    <img
+                      width="35"
+                      height="45"
+                      src="./assets/about_us/mapVector.svg"
+                      alt="mapVector"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li class="absolute top-[20%] left-[550px] group">
+                <div
+                  class="w-5 h-5 bg-primary-yellow rounded-full flex items-center justify-center cursor-pointer"
+                >
+                  <div class="w-3 h-3 bg-primary-black rounded-full"></div>
+                </div>
+
+                <div
+                  class="flex flex-col items-center absolute -top-[80px] -left-[90px] origin-bottom transition-all duration-500 ease-in-out scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100"
+                >
+                  <div
+                    class="px-2 py-2.5 rounded-full bg-gradient-to-r from-[#EEBB0C] to-[#EF6818]"
+                  >
+                    <span
+                      class="whitespace-nowrap font-secondary text-primary-black"
+                      >Hangzhou, China (HQ)</span
+                    >
+                  </div>
+                  <div>
+                    <img
+                      width="35"
+                      height="45"
+                      src="./assets/about_us/mapVector.svg"
+                      alt="mapVector"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li class="absolute top-[23%] left-[580px] group">
+                <div
+                  class="w-5 h-5 bg-primary-yellow rounded-full flex items-center justify-center cursor-pointer"
+                >
+                  <div class="w-3 h-3 bg-primary-black rounded-full"></div>
+                </div>
+
+                <div
+                  class="flex flex-col items-center absolute -top-[80px] -left-[90px] origin-bottom transition-all duration-500 ease-in-out scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100"
+                >
+                  <div
+                    class="px-2 py-2.5 rounded-full bg-gradient-to-r from-[#EEBB0C] to-[#EF6818]"
+                  >
+                    <span
+                      class="whitespace-nowrap font-secondary text-primary-black"
+                      >Hangzhou, China (HQ)</span
+                    >
+                  </div>
+                  <div>
+                    <img
+                      width="35"
+                      height="45"
+                      src="./assets/about_us/mapVector.svg"
+                      alt="mapVector"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li class="absolute top-[36%] right-[310px] group">
+                <div
+                  class="w-5 h-5 bg-primary-yellow rounded-full flex items-center justify-center cursor-pointer"
+                >
+                  <div class="w-3 h-3 bg-primary-black rounded-full"></div>
+                </div>
+
+                <div
+                  class="flex flex-col items-center absolute -top-[80px] -left-[90px] origin-bottom transition-all duration-500 ease-in-out scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100"
+                >
+                  <div
+                    class="px-2 py-2.5 rounded-full bg-gradient-to-r from-[#EEBB0C] to-[#EF6818]"
+                  >
+                    <span
+                      class="whitespace-nowrap font-secondary text-primary-black"
+                      >Hangzhou, China (HQ)</span
+                    >
+                  </div>
+                  <div>
+                    <img
+                      width="35"
+                      height="45"
+                      src="./assets/about_us/mapVector.svg"
+                      alt="mapVector"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li class="absolute top-[32%] right-[245px] group">
+                <div
+                  class="w-5 h-5 bg-primary-yellow rounded-full flex items-center justify-center cursor-pointer"
+                >
+                  <div class="w-3 h-3 bg-primary-black rounded-full"></div>
+                </div>
+
+                <div
+                  class="flex flex-col items-center absolute -top-[80px] -left-[90px] origin-bottom transition-all duration-500 ease-in-out scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100"
+                >
+                  <div
+                    class="px-2 py-2.5 rounded-full bg-gradient-to-r from-[#EEBB0C] to-[#EF6818]"
+                  >
+                    <span
+                      class="whitespace-nowrap font-secondary text-primary-black"
+                      >Hangzhou, China (HQ)</span
+                    >
+                  </div>
+                  <div>
+                    <img
+                      width="35"
+                      height="45"
+                      src="./assets/about_us/mapVector.svg"
+                      alt="mapVector"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li class="absolute bottom-[14%] right-[135px] group">
+                <div
+                  class="w-5 h-5 bg-primary-yellow rounded-full flex items-center justify-center cursor-pointer"
+                >
+                  <div class="w-3 h-3 bg-primary-black rounded-full"></div>
+                </div>
+
+                <div
+                  class="flex flex-col items-center absolute -top-[80px] -left-[90px] origin-bottom transition-all duration-500 ease-in-out scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100"
+                >
+                  <div
+                    class="px-2 py-2.5 rounded-full bg-gradient-to-r from-[#EEBB0C] to-[#EF6818]"
+                  >
+                    <span
+                      class="whitespace-nowrap font-secondary text-primary-black"
+                      >Hangzhou, China (HQ)</span
+                    >
+                  </div>
+                  <div>
+                    <img
+                      width="35"
+                      height="45"
+                      src="./assets/about_us/mapVector.svg"
+                      alt="mapVector"
+                    />
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- sixth section -->
+    <section class="py-24 bg-primary-white">
+      <div
+        class="default_container max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mx-auto"
+      >
+        <div class="flex flex-col gap-20">
+          <div class="flex flex-col items-center gap-6">
+            <span
+              class="font-primary text-lg text-primary-orange font-medium uppercase"
+              >pushing ahead</span
+            >
+            <h2
+              class="font-primary font-medium text-4xl lg:text-6xl lg:leading-[70px] text-primary-black font-medium text-center max-w-[40%]"
+            >
+              Our Journey in Energy Storage
+            </h2>
+          </div>
+
+          <div class="bg-[#F5F5F5] border border-[#C8C8C8] p-10">
+            <div class="swiper slider">
+              <!-- 1 -->
+              <div class="swiper-wrapper">
+                <div class="swiper-slide flex justify-between">
+                  <div class="w-[40%] flex flex-col justify-between pt-20">
+                    <p
+                      class="font-secondary font-medium text-lg text-primary-black"
+                    >
+                      Establishment of SolaX Power Subsidiary in Netherlands.
+                      SolaX Featured On BBC Royal Institution Lectures. The
+                      second generation of X-Hybrid was released.
+                    </p>
+
+                    <h2
+                      class="font-primary font-medium text-[120px] text-primary-black opacity-20"
+                    >
+                      2012
+                    </h2>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./assets/about_us/abtUsSliderImg.png"
+                      alt="abtUsSliderImg"
+                    />
+                  </div>
+                </div>
+                <!-- 2 -->
+                <div class="swiper-slide flex justify-between">
+                  <div class="w-[40%] flex flex-col justify-between pt-20">
+                    <p
+                      class="font-secondary font-medium text-lg text-primary-black"
+                    >
+                      Establishment of SolaX Power Subsidiary in Netherlands.
+                      SolaX Featured On BBC Royal Institution Lectures. The
+                      second generation of X-Hybrid was released.
+                    </p>
+
+                    <h2
+                      class="font-primary font-medium text-[120px] text-primary-black opacity-20"
+                    >
+                      2013
+                    </h2>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./assets/about_us/abtUsSliderImg.png"
+                      alt="abtUsSliderImg"
+                    />
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="swiper-slide flex justify-between">
+                  <div class="w-[40%] flex flex-col justify-between pt-20">
+                    <p
+                      class="font-secondary font-medium text-lg text-primary-black"
+                    >
+                      Establishment of SolaX Power Subsidiary in Netherlands.
+                      SolaX Featured On BBC Royal Institution Lectures. The
+                      second generation of X-Hybrid was released.
+                    </p>
+
+                    <h2
+                      class="font-primary font-medium text-[120px] text-primary-black opacity-20"
+                    >
+                      2014
+                    </h2>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./assets/about_us/abtUsSliderImg.png"
+                      alt="abtUsSliderImg"
+                    />
+                  </div>
+                </div>
+                <!-- 4 -->
+                <div class="swiper-slide flex justify-between">
+                  <div class="w-[40%] flex flex-col justify-between pt-20">
+                    <p
+                      class="font-secondary font-medium text-lg text-primary-black"
+                    >
+                      Establishment of SolaX Power Subsidiary in Netherlands.
+                      SolaX Featured On BBC Royal Institution Lectures. The
+                      second generation of X-Hybrid was released.
+                    </p>
+
+                    <h2
+                      class="font-primary font-medium text-[120px] text-primary-black opacity-20"
+                    >
+                      2015
+                    </h2>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./assets/about_us/abtUsSliderImg.png"
+                      alt="abtUsSliderImg"
+                    />
+                  </div>
+                </div>
+                <!-- 5 -->
+                <div class="swiper-slide flex justify-between">
+                  <div class="w-[40%] flex flex-col justify-between pt-20">
+                    <p
+                      class="font-secondary font-medium text-lg text-primary-black"
+                    >
+                      Establishment of SolaX Power Subsidiary in Netherlands.
+                      SolaX Featured On BBC Royal Institution Lectures. The
+                      second generation of X-Hybrid was released.
+                    </p>
+
+                    <h2
+                      class="font-primary font-medium text-[120px] text-primary-black opacity-20"
+                    >
+                      2016
+                    </h2>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./assets/about_us/abtUsSliderImg.png"
+                      alt="abtUsSliderImg"
+                    />
+                  </div>
+                </div>
+                <!-- 6 -->
+                <div class="swiper-slide flex justify-between">
+                  <div class="w-[40%] flex flex-col justify-between pt-20">
+                    <p
+                      class="font-secondary font-medium text-lg text-primary-black"
+                    >
+                      Establishment of SolaX Power Subsidiary in Netherlands.
+                      SolaX Featured On BBC Royal Institution Lectures. The
+                      second generation of X-Hybrid was released.
+                    </p>
+
+                    <h2
+                      class="font-primary font-medium text-[120px] text-primary-black opacity-20"
+                    >
+                      2017
+                    </h2>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./assets/about_us/abtUsSliderImg.png"
+                      alt="abtUsSliderImg"
+                    />
+                  </div>
+                </div>
+                <!-- 7 -->
+                <div class="swiper-slide flex justify-between">
+                  <div class="w-[40%] flex flex-col justify-between pt-20">
+                    <p
+                      class="font-secondary font-medium text-lg text-primary-black"
+                    >
+                      Establishment of SolaX Power Subsidiary in Netherlands.
+                      SolaX Featured On BBC Royal Institution Lectures. The
+                      second generation of X-Hybrid was released.
+                    </p>
+
+                    <h2
+                      class="font-primary font-medium text-[120px] text-primary-black opacity-20"
+                    >
+                      2018
+                    </h2>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./assets/about_us/abtUsSliderImg.png"
+                      alt="abtUsSliderImg"
+                    />
+                  </div>
+                </div>
+                <!-- 8 -->
+                <div class="swiper-slide flex justify-between">
+                  <div class="w-[40%] flex flex-col justify-between pt-20">
+                    <p
+                      class="font-secondary font-medium text-lg text-primary-black"
+                    >
+                      Establishment of SolaX Power Subsidiary in Netherlands.
+                      SolaX Featured On BBC Royal Institution Lectures. The
+                      second generation of X-Hybrid was released.
+                    </p>
+
+                    <h2
+                      class="font-primary font-medium text-[120px] text-primary-black opacity-20"
+                    >
+                      2019
+                    </h2>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./assets/about_us/abtUsSliderImg.png"
+                      alt="abtUsSliderImg"
+                    />
+                  </div>
+                </div>
+                <!-- 9 -->
+                <div class="swiper-slide flex justify-between">
+                  <div class="w-[40%] flex flex-col justify-between pt-20">
+                    <p
+                      class="font-secondary font-medium text-lg text-primary-black"
+                    >
+                      Establishment of SolaX Power Subsidiary in Netherlands.
+                      SolaX Featured On BBC Royal Institution Lectures. The
+                      second generation of X-Hybrid was released.
+                    </p>
+
+                    <h2
+                      class="font-primary font-medium text-[120px] text-primary-black opacity-20"
+                    >
+                      2020
+                    </h2>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./assets/about_us/abtUsSliderImg.png"
+                      alt="abtUsSliderImg"
+                    />
+                  </div>
+                </div>
+                <!-- 10 -->
+                <div class="swiper-slide flex justify-between">
+                  <div class="w-[40%] flex flex-col justify-between pt-20">
+                    <p
+                      class="font-secondary font-medium text-lg text-primary-black"
+                    >
+                      Establishment of SolaX Power Subsidiary in Netherlands.
+                      SolaX Featured On BBC Royal Institution Lectures. The
+                      second generation of X-Hybrid was released.
+                    </p>
+
+                    <h2
+                      class="font-primary font-medium text-[120px] text-primary-black opacity-20"
+                    >
+                      2021
+                    </h2>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./assets/about_us/abtUsSliderImg.png"
+                      alt="abtUsSliderImg"
+                    />
+                  </div>
+                </div>
+                <!-- 11 -->
+                <div class="swiper-slide flex justify-between">
+                  <div class="w-[40%] flex flex-col justify-between pt-20">
+                    <p
+                      class="font-secondary font-medium text-lg text-primary-black"
+                    >
+                      Establishment of SolaX Power Subsidiary in Netherlands.
+                      SolaX Featured On BBC Royal Institution Lectures. The
+                      second generation of X-Hybrid was released.
+                    </p>
+
+                    <h2
+                      class="font-primary font-medium text-[120px] text-primary-black opacity-20"
+                    >
+                      2022
+                    </h2>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./assets/about_us/abtUsSliderImg.png"
+                      alt="abtUsSliderImg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Separate pagination elements for progress bar and bullets -->
+              <div
+                class="swiper-pagination-progressbar swiper-pagination !static mt-10"
+              ></div>
+              <div
+                class="swiper-pagination-bullets swiper-pagination !static !w-full flex justify-between mt-10"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="pt-24">
+      <div
+        class="default_container max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mx-auto"
+      >
+        <div class="flex flex-col gap-10 lg:flex-row lg:justify-between">
+          <div class="flex justify-center">
+            <a href="/">
+              <img src="./assets/footer_logo.svg" alt="footer_logo" />
+            </a>
+          </div>
+
+          <ul
+            class="grid grid-cols-2 gap-y-10 gap-x-6 lg:w-[70%] lg:flex lg:justify-between"
+          >
+            <li class="flex flex-col gap-8">
+              <span
+                class="font-primary text-primary-white text-base font-medium"
+                >Company</span
+              >
+
+              <ul class="flex flex-col gap-4">
+                <li>
+                  <a href="" class="font-secondary text-primary-grey"
+                    >About Solax</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="font-secondary text-primary-grey">News</a>
+                </li>
+                <li>
+                  <a href="" class="font-secondary text-primary-grey"
+                    >Success Stories</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="font-secondary text-primary-grey">Events</a>
+                </li>
+                <li>
+                  <a href="" class="font-secondary text-primary-grey"
+                    >Sustainability</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="flex flex-col gap-8">
+              <span
+                class="font-primary text-primary-white text-base font-medium"
+                >Solutions</span
+              >
+
+              <ul class="flex flex-col gap-4">
+                <li>
+                  <a href="" class="font-secondary text-primary-grey"
+                    >Energy Storage System</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="font-secondary text-primary-grey"
+                    >Residential</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="font-secondary text-primary-grey"
+                    >Commercial & Industrial</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="font-secondary text-primary-grey"
+                    >EV Charger</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="font-secondary text-primary-grey"
+                    >Smart Energy Management</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="flex flex-col gap-8">
+              <span
+                class="font-primary text-primary-white text-base font-medium"
+                >Services</span
+              >
+
+              <ul class="flex flex-col gap-4">
+                <li>
+                  <a href="" class="font-secondary text-primary-grey"
+                    >Downloads</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="font-secondary text-primary-grey"
+                    >Find a Distributor
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="font-secondary text-primary-grey"
+                    >Global Contacts</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="font-secondary text-primary-grey"
+                    >Warranty Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="font-secondary text-primary-grey"
+                    >Warranty Registration</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="flex flex-col gap-8">
+              <span
+                class="font-primary text-primary-white text-base font-medium"
+                >Upgrade</span
+              >
+
+              <ul class="flex flex-col gap-4">
+                <li>
+                  <a href="" class="font-secondary text-primary-grey"
+                    >SolaX Cloud</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="font-secondary text-primary-grey"
+                    >SolaX Design</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="font-secondary text-primary-grey"
+                    >Webinar</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="font-secondary text-primary-grey"
+                    >Support</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-16">
+          <div
+            class="w-full h-[1px] bg-gradient-to-r from-[#15151566] via-[#7070705F] to-[#15151566]"
+          ></div>
+          <div
+            class="py-5 flex flex-col items-center gap-6 lg:flex-row lg:justify-between"
+          >
+            <ul class="flex gap-5">
+              <li>
+                <a href="">
+                  <img src="./assets/instagram.svg" alt="instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./assets/fb.svg" alt="fb" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./assets/yt.svg" alt="yt" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./assets/twitter.svg" alt="twitter" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./assets/linkedin.svg" alt="linkedin" />
+                </a>
+              </li>
+            </ul>
+
+            <ul class="flex gap-5">
+              <li>
+                <a href="" class="font-secondary text-primary-grey">Sitemap</a>
+              </li>
+              <li>
+                <a href="" class="font-secondary text-primary-grey"
+                  >Terms of Use</a
+                >
+              </li>
+              <li>
+                <a href="" class="font-secondary text-primary-grey"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+
+            <p class="font-secondary text-primary-grey">
+              Copyright @SolaX Power
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="./script.js"></script>
   </body>
 </html>

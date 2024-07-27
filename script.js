@@ -22,20 +22,12 @@ tailwind.config = {
           orange: "#EF6818",
         },
       },
-      keyframes: {
-        popUpAnime: {
-          "0%": { transform: "scaleY(0)" },
-          "100%": { transform: "scaleY(1)" },
-        },
-      },
-      animation: {
-        popUpAnime: "popUpAnime .5s ease-in-out 1",
-      },
     },
   },
 };
 
-const swiper = new Swiper(".swiper", {
+// homepage slider
+const swiper = new Swiper(".homeSwiper", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
@@ -44,6 +36,34 @@ const swiper = new Swiper(".swiper", {
   navigation: {
     nextEl: ".buttonNext",
     prevEl: ".buttonPrev",
+  },
+});
+
+// aboutUsSlider
+var years = [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022]; // Add more years if you have more slides
+var swiper2 = new Swiper(".slider", {
+  pagination: {
+    el: ".swiper-pagination-progressbar",
+    type: "progressbar",
+  },
+});
+
+var swiperBullets = new Swiper(".slider", {
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination-bullets",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + years[index] + "</span>";
+    },
+  },
+  on: {
+    slideChange: function () {
+      swiper2.slideTo(this.activeIndex);
+    },
   },
 });
 
